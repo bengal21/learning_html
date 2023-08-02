@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="all-styles/general.css" />
     <link rel="stylesheet" href="all-styles/header.css" />
     <link rel="stylesheet" href="all-styles/video.css" />
+    <link rel="stylesheet" href="all-styles/sidebar.css" />
   </head>
   <body>
     <div class="header">
@@ -28,6 +29,7 @@
         <input class="search-bar" type="text" placeholder="Search" />
         <button class="search-button">
           <img class="search-icon" src="header-pics/search.svg" alt="" />
+          <div>Search</div>
         </button>
         <button class="voice-button">
           <img
@@ -40,18 +42,52 @@
       <div class="right-section">
         <img class="upload-icon" src="header-pics/upload.svg" alt="" />
         <img class="apps-icon" src="header-pics/youtube-apps.svg" alt="" />
-        <img
-          class="notifications-icon"
-          src="header-pics/notifications.svg"
-          alt=""
-        />
+
+        <div class="notifications-icon-contanier">
+          <img
+            class="notifications-icon"
+            src="header-pics/notifications.svg"
+            alt=""
+          />
+          <div class="notifications-count">3</div>
+        </div>
+
         <img class="mylogo" src="header-pics/my-channel.jpeg" alt="" />
       </div>
     </div>
+
+    <div class="sidebar">
+      <div class="sidebar-link">
+        <img src="sidebar-pip/home.svg" alt="" />
+        <div>Home</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="sidebar-pip/explore.svg" alt="" />
+        <div>Explore</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="sidebar-pip/subscriptions.svg" alt="" />
+        <div>Subscriptions</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="sidebar-pip/originals.svg" alt="" />
+        <div>Originals</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="sidebar-pip/youtube-music.svg" alt="" />
+        <div>YouTube Music</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="sidebar-pip/library.svg" alt="" />
+        <div>Library</div>
+      </div>
+    </div>
+
     <div class="video-grid">
       <div class="video-preview">
         <div class="thumbnail-row">
           <img class="thumbnail" src="thumbnails/thumbnail-1.webp" alt="" />
+          <div class="video-time">14:20</div>
         </div>
 
         <div class="video-info-grid">

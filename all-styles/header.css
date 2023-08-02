@@ -3,11 +3,19 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: white;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(228,228,228);
 }
 .left-section {
-
+  align-items: center;
   display: flex;
   
 }
@@ -47,6 +55,10 @@ flex-shrink: 0;
   margin-right: 10px;
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
+  position: relative;
+}
+.search-button .tooltip {
+  position: absolute;
 }
 .search-icon {
   height: 25px;
@@ -82,19 +94,32 @@ flex-shrink: 0;
 }
 .upload-icon {
   height: 24px;
-
-  
 }
 .apps-icon {
   height: 24px;
-
 }
 .notifications-icon {
   height: 24px;
 
 }
+.notifications-icon-conteiner {
+  position: relative;
+}
+.notifications-count {
+  position: absolute;
+  top: 8px;
+  right: 72px;
+  background-color: red;
+  color: white;
+  border-radius: 11px;
+  font-size: 12px;
+  font-family: Arial;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-bottom: 2px;
+  padding-top: 2px;
+}
 .mylogo {
   height: 34px;
-
-  
 }
+
