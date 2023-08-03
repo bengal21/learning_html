@@ -57,9 +57,40 @@ flex-shrink: 0;
   border-bottom-right-radius: 2px;
   position: relative;
 }
-.search-button .tooltip {
-  position: absolute;
+
+.search-button, .voice-button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.search-button .tooltip,
+.voice-button .tooltip
+{
+  position: absolute;
+  background-color: grey;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px; 
+  border-radius: 3px;
+  font-size: 12px;
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+
+.search-button:hover .tooltip,
+.voice-button:hover .tooltip
+{
+  opacity: 1;
+}
+
 .search-icon {
   height: 25px;
   margin-top: 4px;
